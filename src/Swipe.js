@@ -118,7 +118,7 @@ function Swipe({ children }) {
   /* Touch handlers  start*/
   const handleTouchStart = useCallback((e) => {
     e.preventDefault();
-    handleStart(targetTouches[0]);
+    handleStart(e.targetTouches[0]);
   },[]);
 
   const handleTouchMove = useCallback((e) => {
